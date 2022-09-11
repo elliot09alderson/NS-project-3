@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Poppins&family=Roboto+Flex:opsz@8..144&display=swap');
+$bgcolor : rgb(16,16,16);
+*{
+margin: 0%;
+padding: 0%;
+font-family: 'Roboto Flex', sans-serif;
+}   
+.banner{
+    height: 400px;
+    background-color: $bgcolor;
+}
+
+.row{
+   
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: auto;
+    padding: 1rem 0;
+    background-color:$bgcolor ;
+>h2{
+    padding: 5px 20px;
+color:white;
+}
+
+
+> .flexCard{
+display: flex;
+// flex-wrap: wrap; 
+overflow-x: auto;
+}
+}
+.card{
+    width: 200px;
+    cursor: pointer;
+    margin: 0.4rem;
+    transition:transform 0.5s;
+    &:hover{
+        transform: translateY(-10px) scale(1.1);
+    }
+}
+
+.genreBox{
+    overflow-x: auto;
+    // overflow-y: none;
+    display: flex;
+    height: 100px;
+    background-color: $bgcolor;
+    flex: 0%;
+    
+    >a{
+        color: black;
+        border-radius: 5px;
+        margin: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        transition: all 0.5s;
+        min-width: 10rem;
+        text-align: center;
+        
+        background-color: white;
+        padding: 1rem 0;
+        margin: 1rem;
+        
+        &:hover{
+        background-color: rgb(252, 243, 243);
+    }
+    }
+}
+
+.banner{
+    height: 600px;
+    background-color: $bgcolor;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    box-sizing: border-box;
+
+    justify-content: space-evenly;
+    // position: relative;  
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: $bgcolor;
+        top: 0;
+        left: 0;
+        opacity: 0.4;
+    }
+    h1,p{
+        color: white;
+        font-size: 3rem;
+        width: 40%;
+        z-index: 10;
+
+    }p{
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        font-weight: 200;
+    }
+    >div{
+        display: flex;
+        button{
+            padding: 1rem;
+            width: 250px;
+            outline: none;
+            border: none;
+            z-index: 10;
+            border-radius: 5px;
+            margin: 1rem;
+            font-size: 1.2rem;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s;
+            &:hover{
+                opacity: 0.6;
+            }&:nth-child(odd){
+                background-color: white;
+                color: black;
+            }
+            &:nth-child(even){
+                background-color: grey;
+                color: white;
+            }
+            svg{
+                font-size: 1.7rem;
+                margin:0 10px;
+            }
+        }
+    }
+}

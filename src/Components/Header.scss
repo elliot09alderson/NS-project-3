@@ -1,0 +1,45 @@
+$bgcolor : rgb(16,16,16);
+
+
+.header{
+    height: 100px;
+    background-color: $bgcolor;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    >img{
+        height: 100%;
+    }
+    >div{
+        width: 100%;
+        margin-left: 20px;
+        display: flex;
+        >a{
+            color: white;
+            
+            opacity: 0.78;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 300;
+            z-index: 999;
+    transition: all 0.5s;
+    &:hover{
+        opacity: 1;
+    }
+        }
+     
+         
+    }
+    >svg{
+        color: white;
+        font-size: 1.7rem;
+   
+    }
+   
+
+}
+
